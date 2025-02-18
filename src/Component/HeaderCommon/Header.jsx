@@ -41,7 +41,7 @@ export function Header() {
             sessionStorage.removeItem('IsUserLogedIn')
             sessionStorage.removeItem('Token')
             sessionStorage.removeItem('userid')
-            window.location.reload('/login')
+            window.location.replace('/login')
         } catch (error) {
             alert('error while logout')
         }

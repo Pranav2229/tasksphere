@@ -154,8 +154,8 @@ export function Createtask(props) {
                                                             Priority Level
                                                         </label>
                                                         <div class="input-group">
-                                                            <select class="form-select" onChange={(e) => setpriority(e.target.value)}>
-                                                                <option disabled selected>Choose Status</option>
+                                                            <select class="form-select" value={priority} onChange={(e) => setpriority(e.target.value)}>
+                                                                <option disabled  value="">Choose Status</option>
                                                                 <option value="High">High</option>
                                                                 <option value="medium">medium</option>
                                                                 <option value="Low">Low</option>
@@ -173,8 +173,8 @@ export function Createtask(props) {
                                                         </label>
                                                         <div class="input-group">
                                                             {/* <label class="input-group-text" for="inputGroupSelect01">Options</label> */}
-                                                            <select class="form-select" onChange={(e) => setCategory(e.target.value)}>
-                                                                <option disabled selected>Choose Status</option>
+                                                            <select class="form-select"  value={Category}  onChange={(e) => setCategory(e.target.value)}>
+                                                                <option disabled value="">Choose Status</option>
                                                                 <option value="Officework">Office Work</option>
                                                                 <option value="Personalwork">Personal Work</option>
                                                                 <option value="Studywork">Study Work</option>
